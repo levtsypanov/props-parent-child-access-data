@@ -1,0 +1,7 @@
+<!-- app.component.html -->
+<div style="text-align:center">
+  <h1>
+    {{"Event Message from child component " + message}}
+  </h1>
+</div>
+<app-test (childEvent)="message=$event" [parentData]="name"></app-test>
